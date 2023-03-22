@@ -15,5 +15,5 @@
             android:layout_width="wrap_content"
             android:padding="5px"
             android:src="@drawable/images"/>
-    </FrameLayout>
+    </FrameLayout> //tftyffytf
 </PreferenceScreen>
