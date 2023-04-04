@@ -1,19 +1,215 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+
+<FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mainlayout"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content" android:padding="5px"> //gfcfgchfc
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    </ImageView>
-        //android:src="@drawable/blue"/>
-    <ImageView
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:padding="5px"
-        android:src="@drawable/images"/>
+        <LinearLayout
+            android:layout_width="376dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="row"
+                    android:textSize="15pt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="300px"
+                    android:layout_height="300px"
+                    android:background="#aa0000" />
+
+                <TextView
+                    android:layout_width="300px"
+                    android:layout_height="300px"
+                    android:background="#aaaa00" />
+
+                <TextView
+
+                    android:layout_width="300px"
+                    android:layout_height="300px"
+                    android:background="#00aa00" />
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="1000px"
+        android:layout_height="1000px">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:text="Column"
+                android:textSize="15pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:background="#aa0000" />
+
+            <TextView
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:background="#aaaa00" />
+
+            <TextView
+
+                android:layout_width="300px"
+                android:layout_height="121dp"
+                android:background="#00aa00" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="1100px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="204dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ListView"
+                    android:textSize="15pt" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:background="#aa0000"
+                    android:layout_width="match_parent"
+                    android:layout_height="300px"
+                    />
+                <TextView
+                    android:background="#aaaa00"
+                    android:layout_width="match_parent"
+                    android:layout_height="300px"
+                    />
+                <TextView
+
+                    android:background="#00aa00"
+                    android:layout_width="match_parent"
+                    android:layout_height="300px"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="GridView"
+                android:textSize="15pt" />
+
+            <GridLayout
+                android:id="@+id/GridLayout1"
+                android:layout_width="340dp"
+                android:layout_height="400dp"
+                android:layout_gravity="center_horizontal"
+                android:columnCount="2"
+                android:orientation="horizontal"
+                android:rowCount="2">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="left|top"
+                    android:layout_margin="1dp"
+                    android:background="#CCFFFF"
+                    android:padding="1dp"
+                    android:text="He`d have you all unravel at the"
+                    android:textSize="10pt" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="right|top"
+                    android:layout_margin="1dp"
+                    android:background="#66CCFF"
+                    android:padding="1dp"
+                    android:text="Heed not the rabble"
+                    android:textSize="10pt" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="left|bottom"
+                    android:layout_margin="1dp"
+                    android:background="#0099FF"
+                    android:padding="5dp"
+                    android:text="Sound of screams but the"
+                    android:textSize="10pt" />
+
+                <TextView
+                    android:background="#3366CC"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="right|bottom"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:text="Who scream"
+                    android:textSize="10pt" />
+
+
+            </GridLayout>
+        </LinearLayout>
+</LinearLayout>
+</ScrollView>
+
 </FrameLayout>
+
