@@ -250,10 +250,9 @@
         android:gravity="center"
         android:layout_gravity="center"
         android:text="Calculate"/>
-    <TextView
-        android:id="@+id/employeeInfoTextView"
+    <ListView
+        android:id="@+id/employeeListView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:visibility="gone"/>
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

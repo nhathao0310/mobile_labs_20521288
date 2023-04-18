@@ -26,21 +26,23 @@ public class MainActivity extends AppCompatActivity {
 
         EditText employeeNameEditText = findViewById(R.id.nameEditText);
         EditText employeeSalaryEditText = findViewById(R.id.salaryEditText);
-        TextView employeeInfoTextView = findViewById(R.id.employeeInfoTextView);
         employeeAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, employeeList);
+        ListView employeeListView = findViewById(R.id.employeeListView);
+        employeeListView.setAdapter(employeeAdapter);
         Button submitButton = findViewById(R.id.submitButton);
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String employeeName = employeeNameEditText.getText().toString();
+                String  name = employeeNameEditText.getText().toString();
                 String employeeSalary = employeeSalaryEditText.getText().toString();
                 double sal = Double.parseDouble(employeeSalary);
                 double salary = sal - sal * 0.105;
                 if (sal > 11000000)
                     salary = salary - (salary - 11000000) * 0.05;
 
-                employeeInfoTextView.setText("name: " + employeeName + " salary: " + salary);
-                employeeInfoTextView.setVisibility(View.VISIBLE);
+                Employee employee = new Employee(name, salary);
+                employeeList.add(employee);
+                employeeAdapter.notifyDataSetChanged();
             }
         });
 

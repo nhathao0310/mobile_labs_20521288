@@ -14,7 +14,7 @@ public class Employee {
     @NonNull
     @Override
     public String toString() {
-        return name + " - $" + salary;
+        return name + " - Net salary: " + salary;
     }
 }
 
